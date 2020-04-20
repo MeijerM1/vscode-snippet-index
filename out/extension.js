@@ -22,6 +22,7 @@ function activate(context) {
         });
         editor.edit(editBuilder => {
             editBuilder.insert(editor.selection.active, result.data[0]);
+            editBuilder.delete(editor.selection);
         });
     });
     const searchSnippets = () => __awaiter(this, void 0, void 0, function* () {

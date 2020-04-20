@@ -16,7 +16,9 @@ export function activate(context: vscode.ExtensionContext) {
 
 		editor.edit(editBuilder => {
 			editBuilder.insert(editor.selection.active, result.data[0]);
+			editBuilder.delete(editor.selection);
 		});
+
 	};
 
 	const searchSnippets = async () => {

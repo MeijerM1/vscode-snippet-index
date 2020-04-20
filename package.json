@@ -3,6 +3,7 @@
 	"displayName": "Snippet Index",
 	"description": "Extension for Snippet Index",
 	"version": "0.0.1",
+	"author": "Max Meijer",
 	"engines": {
 		"vscode": "^1.44.0"
 	},
